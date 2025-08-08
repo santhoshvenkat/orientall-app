@@ -1,0 +1,6 @@
+
+{
+  "name": "OrientAll",
+  "description": "An intelligent web app that adapts its tools based on your device's orientation. Features include an alarm clock, stopwatch, timer, and weather. Created for the 'Prompt This Into Existence!' Hackathon.",
+  "requestFramePermissions": []
+}
