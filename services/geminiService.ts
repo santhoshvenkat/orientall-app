@@ -24,7 +24,7 @@ const createWeatherPrompt = (locationQuery: string) => `
 const getWeatherData = async (prompt: string): Promise<{ weatherData: WeatherData; sources: GroundingSource[] }> => {
   // Enhanced check for API Key with a user-friendly error message.
   if (!process.env.API_KEY || process.env.API_KEY === 'DISABLED') {
-    throw new Error("API Key is Missing: To use the weather feature, set your Google AI API key in your Netlify project. Go to Site settings > Build & deploy > Environment variables, and add a variable with the key 'API_KEY'. You must redeploy your site after adding the key.");
+    throw new Error("API Key is Missing: To use the weather feature, set your Google AI API key in your Netlify project. Go to Site configuration > Build & deploy > Environment variables, and add a variable with the key 'API_KEY'. You must redeploy your site after adding the key.");
   }
   
   try {
